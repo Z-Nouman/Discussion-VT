@@ -19,7 +19,7 @@ const errorHandler = require('./_helpers/error-handler');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(cors());
-app.use('/', express.static(path.join(__dirname + '../HW5angular_starter/dist/HW5Angular')));
+app.use('/', express.static(path.join(__dirname + '/HW5angular_starter/dist/HW5Angular')));
 app.use(jwt());
 
 app.use('/user', require('./routes/user.router'));
@@ -30,6 +30,6 @@ app.use(errorHandler);
 const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
 app.listen(port, function () {
   console.log('Server listening on port ' + port);
-  console.log(path.join(__dirname + '../HW5angular_starter'));
+  console.log(path.join(__dirname + '/HW5angular_starter'));
 });
 
