@@ -1,0 +1,16 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form-group > * {
+    width: 100%;
+}
+
+.registration-card {
+    max-width: 800px;
+    text-align: center;
+    justify-self: center;
+    margin: 20px auto;
+}

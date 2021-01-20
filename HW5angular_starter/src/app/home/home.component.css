@@ -1,0 +1,65 @@
+.course-list-container{
+  display: flex;
+  flex-flow: row wrap;
+
+  border-radius: 2px;
+  padding: 10px 10px 30px;
+  margin: 10px 10px 10px 10px;
+  background-color: #ffffff;
+
+}
+
+
+.card-item{
+  flex: 1;
+  padding: 3px 3px 3px 3px;
+  width:300px;
+
+}
+
+.fab-container {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.attendance-spinner{
+
+  display: flex;
+  height: min-content;
+  justify-content: center;
+  align-items: center;
+
+}
+#table{
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(50, 50, 255, 1));
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+
+#filter{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
+}
+
+#intro{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+

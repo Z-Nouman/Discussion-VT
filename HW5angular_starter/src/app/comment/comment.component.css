@@ -1,0 +1,34 @@
+.course-card {
+    flex: 1;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -ms-box-flex: 1;
+    -moz-box-flex: 1;
+    padding: 3px 3px 3px 3px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+.course-image {
+    background-image: url('https://www.assets.cms.vt.edu/images/Standard/Standard_RGB_black.svg');
+    background-size: auto auto;
+}
+
+.mat-card-header {
+    background-color: #BBBBBB;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+[hidden] { display: none !important;}

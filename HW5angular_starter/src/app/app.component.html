@@ -1,0 +1,10 @@
+<div>
+  <mat-toolbar *ngIf="isUser">
+    Hello, {{currentUser.username}}
+
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button (click)="logout()">Logout </button>
+
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</div>

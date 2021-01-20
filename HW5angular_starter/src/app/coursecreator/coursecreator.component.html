@@ -1,0 +1,77 @@
+<form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+
+    <mat-card class="registration-card">
+
+        <mat-card-header>
+            <mat-card-title>Create new course</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <input matInput placeholder="Course number" type="number" formControlName="courseNum" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.courseNum.errors }">
+                    <mat-hint *ngIf="submitted && f.courseNum.errors" >
+                        <mat-hint *ngIf="f.courseNum.errors.required">Course number is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <input matInput placeholder="Course Dept Acronym" type="text" formControlName="courseDept" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.courseDept.errors }">
+                    <mat-hint *ngIf="submitted && f.courseDept.errors" >
+                        <mat-hint *ngIf="f.courseDept.errors.required">Course Department Acronym is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <input matInput placeholder="CRN" type="number" formControlName="CRN" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.CRN.errors }">
+                    <mat-hint *ngIf="submitted && f.CRN.errors" >
+                        <mat-hint *ngIf="f.CRN.errors.required">CRN is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <mat-select placeholder="Season" formControlName="season" class="form-control" [ngClass]="{ 'is-invalid': submitted}">
+                        <mat-option [value]="season.name" *ngFor="let season of seasons;">{{season.name}}</mat-option>
+                    </mat-select>                    <mat-hint *ngIf="submitted && f.season.errors" >
+                        <mat-hint *ngIf="f.season.errors.required">Season is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <input matInput placeholder="Year" type="number" formControlName="year" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.year.errors }">
+                    <mat-hint *ngIf="submitted && f.year.errors" >
+                        <mat-hint *ngIf="f.year.errors.required">Year is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+
+            <div class="form-group">
+                <mat-form-field>
+                    <mat-select placeholder="Public?" formControlName="public" class="form-control" [ngClass]="{ 'is-invalid': submitted}">
+                        <mat-option [value]="visibility.name" *ngFor="let visibility of visibilities;">{{visibility.name}}</mat-option>
+                    </mat-select>                    <mat-hint *ngIf="submitted && f.public.errors" >
+                    <mat-hint *ngIf="f.visibility.errors.required">Visibility is required</mat-hint>
+                </mat-hint>
+                </mat-form-field>
+            </div>
+
+        </mat-card-content>
+
+        <mat-card-actions>
+
+            <button mat-button [disabled]="loading" >Save</button>
+            <button mat-button  routerLink="/" >Cancel</button>
+            <mat-spinner  *ngIf="loading" [diameter]="30"></mat-spinner>
+
+        </mat-card-actions>
+    </mat-card>
+</form>

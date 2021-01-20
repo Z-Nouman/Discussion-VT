@@ -1,0 +1,38 @@
+.login-form{
+
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#header{
+    text-align: center;
+    color: maroon;
+    background-color: white;
+}
+
+.example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+#switch{
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.mat-tab-label {
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}

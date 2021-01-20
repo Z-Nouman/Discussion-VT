@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="882e8df9-03eb-43c4-9353-61818e727503" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jTg1HhHuY1bLcYwPWfyv3d2hOS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v12.3.0/bin/node" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" path-to-node="$USER_HOME$/.nvm/versions/node/v12.3.0/bin/node">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="882e8df9-03eb-43c4-9353-61818e727503" name="Default Changelist" comment="" />
+      <created>1563566889914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563566889914</updated>
+      <workItem from="1563566891004" duration="31162000" />
+      <workItem from="1563860153913" duration="615000" />
+      <workItem from="1564082327703" duration="16301000" />
+      <workItem from="1564609876562" duration="54378000" />
+      <workItem from="1564959575012" duration="7331000" />
+      <workItem from="1565989383348" duration="681000" />
+      <workItem from="1603833281473" duration="10053000" />
+      <workItem from="1604427927226" duration="1187000" />
+      <workItem from="1604507139053" duration="26940000" />
+      <workItem from="1604594408901" duration="8404000" />
+      <workItem from="1604689644981" duration="614000" />
+      <workItem from="1604764211930" duration="8055000" />
+      <workItem from="1604796173936" duration="418000" />
+      <workItem from="1605289011198" duration="650000" />
+      <workItem from="1605398755345" duration="601000" />
+      <workItem from="1605460358179" duration="1293000" />
+      <workItem from="1605888942541" duration="642000" />
+      <workItem from="1606749371863" duration="2396000" />
+      <workItem from="1606837253781" duration="1219000" />
+      <workItem from="1607005235421" duration="3901000" />
+      <workItem from="1607098904155" duration="17062000" />
+      <workItem from="1607269308431" duration="23482000" />
+      <workItem from="1607359828806" duration="16130000" />
+      <workItem from="1607441377622" duration="23668000" />
+      <workItem from="1607572517971" duration="9385000" />
+      <workItem from="1607629983807" duration="7831000" />
+      <workItem from="1607788759123" duration="4852000" />
+      <workItem from="1611158520233" duration="3864000" />
+      <workItem from="1611171018436" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="444" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607453705741">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="444" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1607453705741" />
+    <state x="591" y="275" key="FileChooserDialogImpl" timestamp="1611158680052">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="591" y="275" key="FileChooserDialogImpl/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1611158680052" />
+    <state width="1600" height="280" key="GridCell.Tab.0.bottom" timestamp="1611159081806">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1600" height="280" key="GridCell.Tab.0.bottom/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1611159081806" />
+    <state width="1600" height="280" key="GridCell.Tab.0.center" timestamp="1611159081806">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1600" height="280" key="GridCell.Tab.0.center/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1611159081806" />
+    <state width="1600" height="280" key="GridCell.Tab.0.left" timestamp="1611159081806">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1600" height="280" key="GridCell.Tab.0.left/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1611159081806" />
+    <state width="1600" height="280" key="GridCell.Tab.0.right" timestamp="1611159081806">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state width="1600" height="280" key="GridCell.Tab.0.right/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1611159081806" />
+    <state x="528" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1607303166883">
+      <screen x="0" y="0" width="1620" height="1040" />
+    </state>
+    <state x="528" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040/3240.0.1920.1040@0.0.1620.1040" timestamp="1607303166883" />
+    <state x="3863" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1620.1040/3240.0.1920.1040@3240.0.1920.1040" timestamp="1603833802512" />
+  </component>
+</project>

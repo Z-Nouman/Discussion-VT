@@ -1,0 +1,75 @@
+<h2  style="text-align: center">{{courseDept}}{{courseNumber}} (CRN: {{CRN}})</h2>
+<h3  style="text-align: center">{{season}} {{year}}</h3>
+
+<mat-tab-group animationDuration="0ms" mat-align-tabs="center">
+    <mat-tab label="Forum">
+        <div class="tableHolder">
+            <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                <ng-container matColumnDef="firstName">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> First Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="lastName">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Last Name </th>
+                    <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Date Posted </th>
+                    <td mat-cell *matCellDef="let element"> {{element.datePosted | date}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="title">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+                    <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="authors">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Author(s) </th>
+                    <td mat-cell *matCellDef="let element"> {{element.authors}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="details">
+                    <th mat-header-cell *matHeaderCellDef>  </th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-button (click)="openDialog(element)">DETAILS</button>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="upvotes">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>  </th>
+                    <td mat-cell *matCellDef="let element"> <button mat-button (click)="deletePost(element._id)" *ngIf="isProf()">Delete Post</button> </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Registered Students" class="header" *ngIf="isProf()">
+        <div class="tableHolder">
+            <h3>List of enrolled students:</h3>
+            <ul>
+                <li *ngFor="let user of enrolledStudents" style="padding-right: 10px">{{user.firstName}} {{user.lastName}}
+                <button mat-button style="display: inline" (click)="deleteUser(user)">Remove user</button>
+                </li>
+            </ul>
+        </div>
+    </mat-tab>
+
+    <mat-tab label="Settings" *ngIf="isProf()">
+        <div class="tableHolder">
+            <h3>Settings</h3>
+            <mat-slide-toggle [(ngModel)]="isChecked" *ngIf="isProf()" (change)="buttonToggle()">Visible to non-students: {{isChecked}}</mat-slide-toggle>
+            <h4>Access Code: {{accessCode}}</h4>
+            <button mat-raised-button (click)="changeAccessCode()" id="changeAccess">Generate new access code:</button>
+        </div>
+    </mat-tab>
+
+</mat-tab-group>
+<div class="fab-container">
+    <button mat-flat-button color="warn"  matTooltip="New Post" *ngIf=isStu() (click)="createPost(this.courseID)">
+        Create a post!
+    </button></div>

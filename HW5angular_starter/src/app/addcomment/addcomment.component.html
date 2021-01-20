@@ -1,0 +1,22 @@
+<form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+    <mat-card class="registration-card">
+        <mat-card-header>
+            <mat-card-title>Start a discussion!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="form-group">
+                <mat-form-field>
+                    <input matInput placeholder="Add or edit a comment!" type="text" formControlName="comment" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.comment.errors }">
+                    <mat-hint *ngIf="submitted && f.comment.errors" >
+                        <mat-hint *ngIf="f.comment.errors.required">Comment is required</mat-hint>
+                    </mat-hint>
+                </mat-form-field>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button [disabled]="loading" >Save</button>
+            <button mat-button  type="button" (click)="goBack()" >Cancel</button>
+            <mat-spinner  *ngIf="loading" [diameter]="30"></mat-spinner>
+        </mat-card-actions>
+    </mat-card>
+</form>

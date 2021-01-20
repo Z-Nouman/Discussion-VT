@@ -1,0 +1,21 @@
+<form [formGroup]="addForm"  (ngSubmit)="onSubmit()" class="track-form" >
+    <mat-card class="login-card">
+        <mat-card-header>
+            <mat-card-title>Join a class!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>Paste access code here</mat-label>
+                    <input type="text" formControlName="accessCode" [ngClass]="{ 'is-invalid': submitted && f.accessCode.errors }" matInput placeholder="Paste access code here">
+                    <div *ngIf="submitted && f.accessCode.errors" >
+                        <mat-hint *ngIf="f.accessCode.errors.required">Access code is required</mat-hint>
+                    </div>
+                </mat-form-field>
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="submit" mat-button [disabled]="loading" (click)="onSubmit()">Track</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

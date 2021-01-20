@@ -1,0 +1,19 @@
+<div id="spacer">
+    <h2 mat-dialog-title style="grid-area: header">{{name}}</h2>
+    <div style="height: 95%">
+        <mat-dialog-content class="mat-typography">
+                <div class="column" id="pdf">
+                    <embed [src]=this.pdfSource type='application/pdf' height="100%" width="100%">
+                </div>
+                <div id="comments">
+                    <h2 style="padding-left: 10px">Comments:</h2>
+                        <app-comment *ngFor="let element of comments" [element]="element" (editEvent)="editComment($event)"
+                        (deleteEvent)="deleteComment($event)"></app-comment>
+                </div>
+        </mat-dialog-content>
+        <mat-dialog-actions align="end" id="buttons">
+            <button mat-button (click)="openBottomSheet()">Add Comment</button>
+            <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Return</button>
+        </mat-dialog-actions>
+    </div>
+</div>

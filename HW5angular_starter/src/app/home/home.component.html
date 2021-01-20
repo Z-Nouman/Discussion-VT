@@ -1,0 +1,104 @@
+<h3 id="intro">My Courses:</h3>
+
+<mat-form-field id="filter">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+
+<div id="table">
+
+    <table mat-table [dataSource]="dataSource" *ngIf="!isProf" matSort class="mat-elevation-z8">
+
+        <ng-container matColumnDef="CRN">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> CRN </th>
+            <td mat-cell *matCellDef="let element"> {{element.CRN}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="courseDept">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Acronym </th>
+            <td mat-cell *matCellDef="let element"> {{element.courseDept}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="courseNumber">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Course # </th>
+            <td mat-cell *matCellDef="let element"> {{element.courseNumber}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="season">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Season </th>
+            <td mat-cell *matCellDef="let element"> {{element.season}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="year">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Year </th>
+            <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="details">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-button (click)= "viewCourse(element._id, element.courseNumber, element.courseDept, element.CRN,
+                element.season, element.year, element.public)" >DETAILS</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumnsStudent"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumnsStudent;"></tr>
+
+    </table>
+
+    <table mat-table [dataSource]="dataSource" *ngIf="isProf" matSort class="mat-elevation-z8">
+        <ng-container matColumnDef="CRN">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> CRN </th>
+            <td mat-cell *matCellDef="let element"> {{element.CRN}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="courseDept">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Acronym </th>
+            <td mat-cell *matCellDef="let element"> {{element.courseDept}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="courseNumber">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Course # </th>
+            <td mat-cell *matCellDef="let element"> {{element.courseNumber}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="season">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Season </th>
+            <td mat-cell *matCellDef="let element"> {{element.season}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="year">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Year </th>
+            <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="details">
+            <th mat-header-cell *matHeaderCellDef>  </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-button (click)= "viewCourse(element._id, element.courseNumber, element.courseDept, element.CRN,
+                element.season, element.year, element.public)">DETAILS</button>
+            </td>
+        </ng-container>
+
+        <ng-container  matColumnDef="visible">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Public </th>
+            <td mat-cell *matCellDef="let element"> {{element.public}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+</div>
+
+<div class="fab-container">
+
+    <button mat-flat-button color="primary"  matTooltip="Add new class" *ngIf=isProf (click)="createCourse()">
+        <i class="material-icons">add</i>
+    </button>
+
+    <button mat-flat-button color="warn"  matTooltip="Track attendance" *ngIf=isStu() (click)="joinClass()">
+        <i class="material-icons">done</i>
+    </button>
+
+</div>

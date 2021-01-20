@@ -1,0 +1,44 @@
+/* Structure */
+table {
+
+    width: 100%
+}
+.tableHolder{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.attendance-spinner{
+
+    display: flex;
+    height: min-content;
+    justify-content: center;
+    align-items: center;
+
+}
+.mat-tab-label {
+    padding: 5px;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+#changeAccess{
+    border-style: solid;
+}
+
+.fab-container {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
