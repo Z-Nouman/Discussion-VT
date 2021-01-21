@@ -1,5 +1,5 @@
 {
     "secret": "a secret that no one should guess",
 
-    "connectionString": "mongodb+srv://zaid:<alnouman99>@discussionvtcluster.j7jsf.mongodb.net/<discussionvtcluster>?retryWrites=true&w=majority"
+    "connectionString": "mongodb://localhost/CS4004",
 }
