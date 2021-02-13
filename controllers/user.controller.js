@@ -40,6 +40,7 @@ function getAllUsers(req, res, next) {
 
 // Registers a new user
 function register(req, res, next) {
+    console.log("WE'RE TELLING THE DATABASE TO SAVE A USER");
    userService.addUser(req.body)
         .then(() => res.json({}))
         .catch(err => next(err));
