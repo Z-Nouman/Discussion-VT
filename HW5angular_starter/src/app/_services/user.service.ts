@@ -8,7 +8,7 @@ export class UserService {
 
   // Creates a new User
   register(user: User) {
-    return this.http.post(`https://discussion-vt.herokuapp.com/user/register`, user);
+    return this.http.post(`/user/register`, user);
   }
 
   // Allows a user to register to a course given an access code
