@@ -31,6 +31,6 @@ const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 
 app.listen(port, function () {
   console.log('Server listening on port ' + port);
   console.log(path.join(__dirname + '/HW5angular_starter'));
-  console.log(process.env + "This is the host!")
+  console.log(port + "This is the host!")
 });
 
